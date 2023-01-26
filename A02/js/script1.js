@@ -2,25 +2,39 @@ function corFundo() {
 
     var cor = document.getElementById("txtCor").value;
     cor = cor.toLowerCase();
+    var vcor ="";
+     
 
     if (cor == "red"){
-        document.body.style.backgroundColor="#FF0000";
+       vcor = "#FF0000";
+
+//        document.body.style.backgroundColor="#FF0000";
     }
 else if (cor == "black"){
-    document.body.style.backgroundColor="#000000";
+  vcor="#000000";
+
+  //  document.body.style.backgroundColor="#000000";
 }
 
 else if (cor == "green"){
-    document.body.style.backgroundColor="#00FF00";
+    vcor="#00FF00";
+    
+    
+    //document.body.style.backgroundColor="#00FF00";
 }
 
 else{
-    document.body.style.backgroundColor="#FFFFFF"; 
+    
+    vcor="#FFFFFF";
+
+    //document.body.style.backgroundColor="#FFFFFF"; 
     alert ("A cor não existe");
 
 }
-}
 
+document.body.style.backgroundColor = vcor;
+
+}
 
 function textoClaro() {
 
