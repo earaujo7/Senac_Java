@@ -1,0 +1,8 @@
+#foto{
+    width:  55%;
+    height: 45%;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: ease 0.1s;
+    
+}
