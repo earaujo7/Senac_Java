@@ -1,0 +1,64 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+h1{
+text-align: center;
+padding: 50px;
+font-family: Arial, Helvetica, sans-serif
+}
+
+#produtos1,#produtos2{
+
+    padding: 30px;  
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgb(61, 61, 61);
+    transition: ease 0.5s;
+}
+
+#produtos1:hover,#produtos2:hover{
+
+    background-color: blueviolet;
+}
+
+#h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.p{
+    color:blue;
+    font-size: 20pt;
+
+}
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
