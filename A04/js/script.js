@@ -153,3 +153,21 @@ const saida2 =`<h2>${Prod[1].nome}</h2
 `;
 
 document.getElementById("produtos2").innerHTML = saida2;
+
+console.log("---------------------");
+
+
+//Contagem usando o 'for'
+
+
+for(let i=1; i<=10; i+=1){
+    console.log(i);
+}
+
+for(let btn=1; btn<=10; btn+=1)
+
+document.getElementById("btn1").innerHTML += `<button>Botão ${btn}</button>`;
+
+
+
+console.log(btn);
