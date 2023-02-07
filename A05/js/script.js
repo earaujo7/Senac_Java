@@ -76,8 +76,8 @@ O 'for' procura o id passado para a funcao no 'Array' comparando o id passado co
     for(let i = 0; i <= 2; i++){
         if (products[i].idproduct == id){
             rsprod.innerHTML =(products[i].nomeproduct);
-            rsprod.innerHTML+=(products[i].preco);
             rsprod.innerHTML+=(products[i].marca);
+            rsprod.innerHTML+=(products[i].preco);
             
  
         break; // Stop the 'For' loop

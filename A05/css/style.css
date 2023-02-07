@@ -8,13 +8,15 @@
 header{
     padding: 50px 50px;
     border-bottom: 1px solid #1e471e;
-
+    background-color: #1e471e;
+    -webkit-text-fill-color: #eeeeee;
+    
 }
 
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-
+   
 }
 
 #formulario{
@@ -30,7 +32,7 @@ h1{
     font-size: 15pt;
     font-weight: lighter;
     width: 95%;
-    margin: 10 auto;
+    margin: 10px auto;
     display: block; 
     border: 0;
 }
@@ -44,6 +46,7 @@ h1{
 #formproduto select{
     padding: 30px;
     width: 95%;
+    
 
 }
 
@@ -55,4 +58,5 @@ h1{
 
 #rsprod h2{
     text-align: center;
+    
 }
