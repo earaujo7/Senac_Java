@@ -1,16 +1,32 @@
+/*
+Adicionado um link de arquivo css no index.html atraves do 'js'  
+*/
+
 window.document.head.innerHTML = `<link rel="stylesheet" href="css/styles.css" />`;
 
-
+/*
+Criar a 'divCard' para exibir as imagens dos produtos ao clicar na ft de miniatura do prod
+*/ 
 
 const divCard = document.createElement('div');
-divCard.setAttribute('class', 'divCard');
 
+
+//definir uma atributo class para a divCard com o nome 'divCard'
+
+divCard.setAttribute('class', 'divCard');
+/*
+criar uma img para que ao clicar nas ft do prod seja mostrado numa tela a ft selecionada
+*/
 const imgCard = document.createElement('img');
 imgCard.setAttribute('id', 'imgCard');
 divCard.appendChild(imgCard);
 
 
+/*
+foi criado um elemento de html para a tag de link(a) para fejcar a div 'divCard'
+quando usuario clicar chamara a funcao close e recolhe a div 'divCard'
 
+*/
 const close = document.createElement('a');
 close.innerHTML = "X";
 close.setAttribute('class', 'close');
