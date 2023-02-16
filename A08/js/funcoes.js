@@ -83,14 +83,17 @@ const paletaCores = function (linhas, colunas) {
         var green=(Math.round(1 + Math.random() * 254));
         var blue=(Math.round(1 + Math.random() * 254));
 
-    tabela+= `<td style='background-color:rgb(${red},${green},${blue})'>__</td>`;
- 
+        tabela += `<td onclick = mudarCor('rgb(${red},${green},${blue})') style='background-color:rgb(${red},${green},${blue})'>__</td>`;
+}
+
+}
 return tabela += "</tr>";
 
-}
-    }
-
-
-
 
 }
+
+    function mudarCor (cor) {
+    window.document.body.style.backgroundColor = cor;
+    
+}
+
