@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     width: 100vw;
+     height: 100vh;
+}
+#square{
+
+    width: 100px;
+    height: 100px;
+    background-color:  rgb(8, 255, 41);
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+#background{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: 100vh; 
+    padding-top: 100px;
+    transition: ease 1s;
+
+}
+
+#scrn{
+    background-color: rgb(243, 243, 243);
+    width: 50%;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(158, 158, 158, 0.75);
+    position: relative;
+    top: -1000px;
+    transition: ease 1s;
+}
+
+#clse{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    background-color: brown;
+    border-radius: 5px;
+    text-align: justify;
+    z-index: 10000;
+    color: white;
+}
+#a{
+    color: blueviolet;
+    font-size: 20px;
+
+}
