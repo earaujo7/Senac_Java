@@ -22,6 +22,9 @@ function carregar(pagina){
     .then((response)=>response.json())
     .then((resultado)=>{
         console.log(resultado.results);
+
+        document.getElementById("#conteudo").innerHTML="";
+
         resultado.results.map((filme,index)=>{
             var caixa = document.createElement('div');
                 caixa.setAttribute('class', 'caixa');
@@ -42,7 +45,8 @@ function carregar(pagina){
             caixa.appendChild(img);
             caixa.appendChild(texto);
 
-            document.querySelector("#conteudo").appendChild(caixa);
+            document.getElementById("#conteudo").appendChild(caixa);
+            // document.querySelector("#conteudo").innerHTML+=;
         })
     })
     .catch((error)=>console.log(error));
@@ -52,6 +56,15 @@ function carregar(pagina){
 window.document.body.onload=()=>{
     carregar(1);
 };
+
+let saida = '<nav class=page><ul>';
+
+for (let i=1; i<=20; i++) {
+    saida+=`<li><a href='#' onclick='carregar(${i})>${i}</a></li>`;
+}
+
+saida += '</ul></nav>';
+document.querySelector("paginacao").innerHTML=saida;
 
 window.setTimeout(()=>{
     document.querySelector("#carregando").style.opacity='0';
